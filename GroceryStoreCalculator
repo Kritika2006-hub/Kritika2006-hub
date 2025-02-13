@@ -1,0 +1,13 @@
+
+
+total_cost = 0
+
+while True:
+    name = input("Enter the item name : ")
+    if name.lower() == 'done':
+        break
+    price = float(input("Enter the price of the item: "))
+    quantity = int(input("Enter the quantity of the item: "))
+    total_cost += price * quantity
+
+print(f"\nTotal cost: {total_cost}")
